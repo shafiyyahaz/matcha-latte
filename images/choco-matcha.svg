@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f1df"/><stop offset="1" stop-color="#dfe9c9"/></linearGradient>
+ <linearGradient id="drink" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a5c070"/><stop offset="1" stop-color="#7b5a45"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-opacity=".18"/></filter>
+</defs>
+<rect width="700" height="700" rx="70" fill="url(#bg)"/>
+<circle cx="120" cy="120" r="72" fill="#ffffff" opacity=".55"/>
+<circle cx="590" cy="150" r="95" fill="#c9d8a5" opacity=".45"/>
+<ellipse cx="350" cy="600" rx="205" ry="42" fill="#6f8250" opacity=".22"/>
+<g filter="url(#shadow)">
+ <path d="M220 185 Q350 145 480 185 L450 545 Q350 590 250 545 Z" fill="#fff" opacity=".96"/>
+ <path d="M238 255 Q350 220 462 255 L438 525 Q350 555 262 525 Z" fill="url(#drink)"/>
+ <ellipse cx="350" cy="255" rx="112" ry="35" fill="#a5c070"/>
+ <ellipse cx="350" cy="250" rx="92" ry="20" fill="#f4f0d8" opacity=".5"/>
+ <path d="M275 210 L315 105" stroke="#3c5a31" stroke-width="12" stroke-linecap="round"/>
+ <path d="M315 105 Q350 78 376 105" fill="none" stroke="#3c5a31" stroke-width="10" stroke-linecap="round"/>
+ <path d="M300 350 Q350 325 400 350" fill="none" stroke="#ffffff" stroke-width="8" opacity=".35"/>
+</g>
+<text x="350" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#30452a">CHOCO MATCHA</text>
+</svg>
