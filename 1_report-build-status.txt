@@ -1,0 +1,41 @@
+﻿2026-09-30T01:25:02.5707276Z Current runner version: '2.337.0'
+2026-09-30T01:25:02.5741439Z ##[group]Runner Image Provisioner
+2026-09-30T01:25:02.5742807Z Hosted Compute Agent
+2026-09-30T01:25:02.5743692Z Version: 20260828.587
+2026-09-30T01:25:02.5745242Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-30T01:25:02.5746467Z Build Date: 2026-08-28T16:44:25Z
+2026-09-30T01:25:02.5747785Z Worker ID: {04722ae6-8c2d-42ce-b4af-75e507ec36f0}
+2026-09-30T01:25:02.5749027Z Azure Region: eastus
+2026-09-30T01:25:02.5749988Z ##[endgroup]
+2026-09-30T01:25:02.5752796Z ##[group]Operating System
+2026-09-30T01:25:02.5753777Z Ubuntu
+2026-09-30T01:25:02.5755109Z 24.04.5
+2026-09-30T01:25:02.5755986Z LTS
+2026-09-30T01:25:02.5756786Z ##[endgroup]
+2026-09-30T01:25:02.5757820Z ##[group]Runner Image
+2026-09-30T01:25:02.5758823Z Image: ubuntu-24.04
+2026-09-30T01:25:02.5759940Z Version: 20260920.314.1
+2026-09-30T01:25:02.5761958Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+2026-09-30T01:25:02.5765003Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+2026-09-30T01:25:02.5766726Z ##[endgroup]
+2026-09-30T01:25:02.5768731Z ##[group]GITHUB_TOKEN Permissions
+2026-09-30T01:25:02.5771498Z Contents: read
+2026-09-30T01:25:02.5772500Z Metadata: read
+2026-09-30T01:25:02.5773411Z Pages: write
+2026-09-30T01:25:02.5775136Z ##[endgroup]
+2026-09-30T01:25:02.5778141Z Secret source: Actions
+2026-09-30T01:25:02.5779766Z Cache mode: read
+2026-09-30T01:25:02.5781200Z Prepare workflow directory
+2026-09-30T01:25:02.6249774Z Prepare all required actions
+2026-09-30T01:25:02.6399654Z Complete job name: report-build-status
+2026-09-30T01:25:03.1693679Z ##[group]Run gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" \
+2026-09-30T01:25:03.1695476Z [36;1mgh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" \[0m
+2026-09-30T01:25:03.1696499Z [36;1m  -F github_run_id="$GITHUB_RUN_ID" \[0m
+2026-09-30T01:25:03.1697438Z [36;1m  -F conclusion="$CONCLUSION"[0m
+2026-09-30T01:25:03.2476630Z shell: /usr/bin/bash -e {0}
+2026-09-30T01:25:03.2478034Z env:
+2026-09-30T01:25:03.2483613Z   GITHUB_TOKEN: ***
+2026-09-30T01:25:03.2484358Z   CONCLUSION: success
+2026-09-30T01:25:03.2485359Z ##[endgroup]
+2026-09-30T01:25:03.6731491Z {}
+2026-09-30T01:25:03.6898131Z Cleaning up orphan processes

@@ -1,0 +1,103 @@
+﻿2026-09-30T01:24:53.0789119Z ##[group]Run actions/checkout@v7.0.1
+2026-09-30T01:24:53.0789779Z with:
+2026-09-30T01:24:53.0789981Z   ref: main
+2026-09-30T01:24:53.0790179Z   submodules: recursive
+2026-09-30T01:24:53.0790426Z   repository: shafiyyahaz/matcha-latte
+2026-09-30T01:24:53.0793044Z   token: ***
+2026-09-30T01:24:53.0793258Z   ssh-strict: true
+2026-09-30T01:24:53.0793463Z   ssh-user: git
+2026-09-30T01:24:53.0793682Z   persist-credentials: true
+2026-09-30T01:24:53.0793913Z   clean: true
+2026-09-30T01:24:53.0794141Z   sparse-checkout-cone-mode: true
+2026-09-30T01:24:53.0794405Z   fetch-depth: 1
+2026-09-30T01:24:53.0794603Z   fetch-tags: false
+2026-09-30T01:24:53.0794805Z   show-progress: true
+2026-09-30T01:24:53.0795008Z   lfs: false
+2026-09-30T01:24:53.0795224Z   set-safe-directory: true
+2026-09-30T01:24:53.0795493Z   allow-unsafe-pr-checkout: false
+2026-09-30T01:24:53.0795995Z ##[endgroup]
+2026-09-30T01:24:53.1885125Z Syncing repository: shafiyyahaz/matcha-latte
+2026-09-30T01:24:53.1887068Z ##[group]Getting Git version info
+2026-09-30T01:24:53.1887827Z Working directory is '/home/runner/work/matcha-latte/matcha-latte'
+2026-09-30T01:24:53.1888746Z [command]/usr/bin/git version
+2026-09-30T01:24:53.1950884Z git version 2.55.0
+2026-09-30T01:24:53.1977787Z ##[endgroup]
+2026-09-30T01:24:53.1991586Z Temporarily overriding HOME='/home/runner/work/_temp/f13717eb-4815-44d7-9b6a-d0b1c6b0cf9b' before making global git config changes
+2026-09-30T01:24:53.1993194Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-30T01:24:53.1998823Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/matcha-latte/matcha-latte
+2026-09-30T01:24:53.2054309Z Deleting the contents of '/home/runner/work/matcha-latte/matcha-latte'
+2026-09-30T01:24:53.2058595Z ##[group]Determining repository object format
+2026-09-30T01:24:53.4614470Z ##[endgroup]
+2026-09-30T01:24:53.4615733Z ##[group]Initializing the repository
+2026-09-30T01:24:53.4625677Z [command]/usr/bin/git init /home/runner/work/matcha-latte/matcha-latte
+2026-09-30T01:24:53.4753715Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-30T01:24:53.4775409Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-30T01:24:53.4790540Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-30T01:24:53.4791907Z hint: call:
+2026-09-30T01:24:53.4792279Z hint:
+2026-09-30T01:24:53.4792804Z hint: 	git config --global init.defaultBranch <name>
+2026-09-30T01:24:53.4793744Z hint:
+2026-09-30T01:24:53.4794279Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-30T01:24:53.4795465Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-30T01:24:53.4796179Z hint:
+2026-09-30T01:24:53.4796555Z hint: 	git branch -m <name>
+2026-09-30T01:24:53.4796956Z hint:
+2026-09-30T01:24:53.4797520Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-30T01:24:53.4798603Z Initialized empty Git repository in /home/runner/work/matcha-latte/matcha-latte/.git/
+2026-09-30T01:24:53.4800415Z [command]/usr/bin/git remote add origin https://github.com/shafiyyahaz/matcha-latte
+2026-09-30T01:24:53.4864319Z ##[endgroup]
+2026-09-30T01:24:53.4865066Z ##[group]Disabling automatic garbage collection
+2026-09-30T01:24:53.4865704Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-30T01:24:53.5020473Z ##[endgroup]
+2026-09-30T01:24:53.5021664Z ##[group]Setting up auth
+2026-09-30T01:24:53.5023445Z Removing SSH command configuration
+2026-09-30T01:24:53.5024787Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-30T01:24:53.5027932Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-30T01:24:53.5364798Z Removing HTTP extra header
+2026-09-30T01:24:53.5370236Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-30T01:24:53.5419568Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-30T01:24:53.5640857Z Removing includeIf entries pointing to credentials config files
+2026-09-30T01:24:53.5646955Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-30T01:24:53.5687174Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-30T01:24:53.5919196Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-30T01:24:53.5961936Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/matcha-latte/matcha-latte/.git.path /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:53.5999546Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/matcha-latte/matcha-latte/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:53.6041684Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:53.6079505Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:53.6114601Z ##[endgroup]
+2026-09-30T01:24:53.6115262Z ##[group]Fetching the repository
+2026-09-30T01:24:53.6122322Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/main*:refs/remotes/origin/main* +refs/tags/main*:refs/tags/main*
+2026-09-30T01:24:54.0919699Z From https://github.com/shafiyyahaz/matcha-latte
+2026-09-30T01:24:54.0920770Z  * [new branch]      main       -> origin/main
+2026-09-30T01:24:54.0932246Z ##[endgroup]
+2026-09-30T01:24:54.0932638Z ##[group]Determining the checkout info
+2026-09-30T01:24:54.0934213Z [command]/usr/bin/git branch --list --remote origin/main
+2026-09-30T01:24:54.0969173Z   origin/main
+2026-09-30T01:24:54.0974126Z ##[endgroup]
+2026-09-30T01:24:54.0978327Z [command]/usr/bin/git sparse-checkout disable
+2026-09-30T01:24:54.1038691Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-30T01:24:54.1077651Z ##[group]Checking out the ref
+2026-09-30T01:24:54.1081855Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-09-30T01:24:54.1163953Z Switched to a new branch 'main'
+2026-09-30T01:24:54.1169767Z branch 'main' set up to track 'origin/main'.
+2026-09-30T01:24:54.1175200Z ##[endgroup]
+2026-09-30T01:24:54.1175974Z ##[group]Setting up auth for fetching submodules
+2026-09-30T01:24:54.1181311Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-30T01:24:54.1227934Z [command]/usr/bin/git config --global include.path /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:54.1267812Z [command]/usr/bin/git config --global --unset-all url.https://github.com/.insteadOf
+2026-09-30T01:24:54.1316042Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf git@github.com:
+2026-09-30T01:24:54.1357979Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf org-315219647@github.com:
+2026-09-30T01:24:54.1397166Z ##[endgroup]
+2026-09-30T01:24:54.1397769Z ##[group]Fetching submodules
+2026-09-30T01:24:54.1401629Z [command]/usr/bin/git submodule sync --recursive
+2026-09-30T01:24:54.1657435Z [command]/usr/bin/git -c protocol.version=2 submodule update --init --force --depth=1 --recursive
+2026-09-30T01:24:54.1921958Z [command]/usr/bin/git submodule foreach --recursive git config --local gc.auto 0
+2026-09-30T01:24:54.2172873Z ##[endgroup]
+2026-09-30T01:24:54.2173286Z ##[group]Persisting credentials for submodules
+2026-09-30T01:24:54.2181787Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'url\.https\:\/\/github\.com\/\.insteadOf' && git config --local --unset-all 'url.https://github.com/.insteadOf' || :"
+2026-09-30T01:24:54.2449962Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-30T01:24:54.2701321Z [command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'git@github.com:'
+2026-09-30T01:24:54.2978952Z [command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'org-315219647@github.com:'
+2026-09-30T01:24:54.3335238Z ##[endgroup]
+2026-09-30T01:24:54.3399043Z [command]/usr/bin/git log -1 --format=%H
+2026-09-30T01:24:54.3434099Z 0e44b29115a1b02431ba6816f3f6628cf1450c5e

@@ -1,0 +1,87 @@
+﻿2026-09-30T01:24:57.2680755Z ##[group]Run actions/upload-pages-artifact@v3
+2026-09-30T01:24:57.2681455Z with:
+2026-09-30T01:24:57.2681657Z   path: ./_site
+2026-09-30T01:24:57.2681860Z   name: github-pages
+2026-09-30T01:24:57.2682084Z   retention-days: 1
+2026-09-30T01:24:57.2682281Z ##[endgroup]
+2026-09-30T01:24:57.2746698Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run]
+2026-09-30T01:24:57.2794880Z ##[group]Run echo ::group::Archive artifact
+2026-09-30T01:24:57.2795262Z [36;1mecho ::group::Archive artifact[0m
+2026-09-30T01:24:57.2795539Z [36;1mtar \[0m
+2026-09-30T01:24:57.2795792Z [36;1m  --dereference --hard-dereference \[0m
+2026-09-30T01:24:57.2796110Z [36;1m  --directory "$INPUT_PATH" \[0m
+2026-09-30T01:24:57.2796420Z [36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \[0m
+2026-09-30T01:24:57.2796733Z [36;1m  --exclude=.git \[0m
+2026-09-30T01:24:57.2796984Z [36;1m  --exclude=.github \[0m
+2026-09-30T01:24:57.2797220Z [36;1m  .[0m
+2026-09-30T01:24:57.2797421Z [36;1mecho ::endgroup::[0m
+2026-09-30T01:24:57.2826597Z shell: /usr/bin/sh -e {0}
+2026-09-30T01:24:57.2826860Z env:
+2026-09-30T01:24:57.2827055Z   INPUT_PATH: ./_site
+2026-09-30T01:24:57.2827275Z ##[endgroup]
+2026-09-30T01:24:57.2887557Z ##[group]Archive artifact
+2026-09-30T01:24:57.2905746Z ./
+2026-09-30T01:24:57.2906100Z ./js/
+2026-09-30T01:24:57.2906431Z ./js/app.js
+2026-09-30T01:24:57.2906770Z ./script.js
+2026-09-30T01:24:57.2907123Z ./PHOTO-SOURCES.md
+2026-09-30T01:24:57.2907603Z ./css/
+2026-09-30T01:24:57.2907970Z ./css/style.css
+2026-09-30T01:24:57.2908236Z ./assets/
+2026-09-30T01:24:57.2908436Z ./assets/css/
+2026-09-30T01:24:57.2908715Z ./assets/css/style.css
+2026-09-30T01:24:57.2909244Z ./PHOTO-SOURCES.html
+2026-09-30T01:24:57.2909670Z ./index.html
+2026-09-30T01:24:57.2910008Z ./images-real/
+2026-09-30T01:24:57.2910363Z ./images-real/index.html
+2026-09-30T01:24:57.2910776Z ./README.md
+2026-09-30T01:24:57.2911360Z ./images/
+2026-09-30T01:24:57.2911696Z ./images/favicon.svg
+2026-09-30T01:24:57.2912077Z ./images/matcha-cloud.svg
+2026-09-30T01:24:57.2912505Z ./images/classic-matcha.svg
+2026-09-30T01:24:57.2912936Z ./images/boba-matcha.svg
+2026-09-30T01:24:57.2913329Z ./images/honey-matcha.svg
+2026-09-30T01:24:57.2913747Z ./images/chocolate-matcha.svg
+2026-09-30T01:24:57.2914179Z ./images/IMAGE-NOTE.txt
+2026-09-30T01:24:57.2914559Z ./images/index.html
+2026-09-30T01:24:57.2914973Z ./images/hero-matcha.jpg
+2026-09-30T01:24:57.2915395Z ./images/dirty-matcha.svg
+2026-09-30T01:24:57.2915789Z ./images/rose-matcha.svg
+2026-09-30T01:24:57.2916178Z ./images/choco-matcha.svg
+2026-09-30T01:24:57.2916563Z ./images/mango-matcha.svg
+2026-09-30T01:24:57.2916968Z ./images/classic-matcha-latte.svg
+2026-09-30T01:24:57.2917402Z ./images/coconut-matcha.svg
+2026-09-30T01:24:57.2917826Z ./images/strawberry-matcha.svg
+2026-09-30T01:24:57.2918253Z ./style.css
+2026-09-30T01:24:57.2918659Z ##[endgroup]
+2026-09-30T01:24:57.2932717Z ##[end-action id=__actions_upload-pages-artifact.__run;outcome=success;conclusion=success;duration_ms=18]
+2026-09-30T01:24:57.2935814Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_2]
+2026-09-30T01:24:57.2940582Z ##[end-action id=__actions_upload-pages-artifact.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-09-30T01:24:57.2943725Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_3]
+2026-09-30T01:24:57.2947242Z ##[end-action id=__actions_upload-pages-artifact.__run_3;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-09-30T01:24:57.2949358Z ##[start-action display=Upload artifact;id=__actions_upload-pages-artifact.upload-artifact]
+2026-09-30T01:24:57.3004539Z ##[group]Run actions/upload-artifact@v4
+2026-09-30T01:24:57.3004852Z with:
+2026-09-30T01:24:57.3005057Z   name: github-pages
+2026-09-30T01:24:57.3005318Z   path: /home/runner/work/_temp/artifact.tar
+2026-09-30T01:24:57.3005623Z   retention-days: 1
+2026-09-30T01:24:57.3005843Z   if-no-files-found: error
+2026-09-30T01:24:57.3006076Z   compression-level: 6
+2026-09-30T01:24:57.3006289Z   overwrite: false
+2026-09-30T01:24:57.3006733Z   include-hidden-files: false
+2026-09-30T01:24:57.3006974Z ##[endgroup]
+2026-09-30T01:24:57.4656667Z (node:2596) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-30T01:24:57.4657440Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-30T01:24:57.4703616Z With the provided path, there will be 1 file uploaded
+2026-09-30T01:24:57.4710174Z Artifact name is valid!
+2026-09-30T01:24:57.4711223Z Root directory input is valid!
+2026-09-30T01:24:57.7003534Z Beginning upload of artifact content to blob storage
+2026-09-30T01:24:57.7260439Z (node:2596) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-09-30T01:24:57.8604498Z Uploaded bytes 124645
+2026-09-30T01:24:57.8881829Z Finished uploading artifact content to blob storage!
+2026-09-30T01:24:57.8887543Z SHA256 digest of uploaded artifact zip is 50c03786149de4c8fc18cbccd3a645f598f6d3a292f7fe9832e14b861f344646
+2026-09-30T01:24:57.8888342Z Finalizing artifact upload
+2026-09-30T01:24:58.1258655Z Artifact github-pages.zip successfully finalized. Artifact ID 11071164823
+2026-09-30T01:24:58.1260068Z Artifact github-pages has been successfully uploaded! Final size is 124645 bytes. Artifact ID is 11071164823
+2026-09-30T01:24:58.1266552Z Artifact download URL: https://github.com/shafiyyahaz/matcha-latte/actions/runs/36654966681/artifacts/11071164823
+2026-09-30T01:24:58.1373386Z ##[end-action id=__actions_upload-pages-artifact.upload-artifact;outcome=success;conclusion=success;duration_ms=842]

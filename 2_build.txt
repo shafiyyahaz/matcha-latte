@@ -1,0 +1,369 @@
+﻿2026-09-30T01:24:38.5484697Z Current runner version: '2.337.0'
+2026-09-30T01:24:38.5510714Z ##[group]Runner Image Provisioner
+2026-09-30T01:24:38.5511896Z Hosted Compute Agent
+2026-09-30T01:24:38.5512608Z Version: 20260828.587
+2026-09-30T01:24:38.5513262Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-30T01:24:38.5514024Z Build Date: 2026-08-28T16:44:25Z
+2026-09-30T01:24:38.5514718Z Worker ID: {e6e19989-163d-411b-ab9b-4a193b4dc5df}
+2026-09-30T01:24:38.5515458Z Azure Region: northcentralus
+2026-09-30T01:24:38.5516116Z ##[endgroup]
+2026-09-30T01:24:38.5517615Z ##[group]Operating System
+2026-09-30T01:24:38.5518261Z Ubuntu
+2026-09-30T01:24:38.5518905Z 24.04.5
+2026-09-30T01:24:38.5519403Z LTS
+2026-09-30T01:24:38.5519947Z ##[endgroup]
+2026-09-30T01:24:38.5520521Z ##[group]Runner Image
+2026-09-30T01:24:38.5521463Z Image: ubuntu-24.04
+2026-09-30T01:24:38.5522136Z Version: 20260920.314.1
+2026-09-30T01:24:38.5523396Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260920.314/images/ubuntu/Ubuntu2404-Readme.md
+2026-09-30T01:24:38.5525030Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260920.314
+2026-09-30T01:24:38.5525976Z ##[endgroup]
+2026-09-30T01:24:38.5527216Z ##[group]GITHUB_TOKEN Permissions
+2026-09-30T01:24:38.5529303Z Contents: read
+2026-09-30T01:24:38.5530022Z Metadata: read
+2026-09-30T01:24:38.5530671Z Pages: write
+2026-09-30T01:24:38.5531598Z ##[endgroup]
+2026-09-30T01:24:38.5533765Z Secret source: Actions
+2026-09-30T01:24:38.5534735Z Cache mode: read
+2026-09-30T01:24:38.5535793Z Prepare workflow directory
+2026-09-30T01:24:38.5992258Z Prepare all required actions
+2026-09-30T01:24:38.6061253Z Getting action download info
+2026-09-30T01:24:38.8444537Z Download action repository 'actions/checkout@v7.0.1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-09-30T01:24:38.9392031Z Download action repository 'actions/jekyll-build-pages@v1' (SHA:44a6e6beabd48582f863aeeb6cb2151cc1716697)
+2026-09-30T01:24:39.2584040Z Download action repository 'actions/upload-pages-artifact@v3' (SHA:56afc609e74202658d3ffba0e8f6dda462b719fa)
+2026-09-30T01:24:39.5119036Z Getting action download info
+2026-09-30T01:24:39.5998642Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-09-30T01:24:39.7352448Z Complete job name: build
+2026-09-30T01:24:39.7855306Z ##[group]Pull down action image 'ghcr.io/actions/jekyll-build-pages:v1.0.13'
+2026-09-30T01:24:39.7978835Z ##[command]/usr/bin/docker pull ghcr.io/actions/jekyll-build-pages:v1.0.13
+2026-09-30T01:24:40.2586262Z v1.0.13: Pulling from actions/jekyll-build-pages
+2026-09-30T01:24:40.2588740Z efc2b5ad9eec: Pulling fs layer
+2026-09-30T01:24:40.2589809Z 165b60d1bb48: Pulling fs layer
+2026-09-30T01:24:40.2590830Z 2a328af1ca3a: Pulling fs layer
+2026-09-30T01:24:40.2592700Z 32b58fa44788: Pulling fs layer
+2026-09-30T01:24:40.2594162Z 590ab93c22d2: Pulling fs layer
+2026-09-30T01:24:40.2595437Z 26ea96c4c14c: Pulling fs layer
+2026-09-30T01:24:40.2596638Z bd7e451dfea1: Pulling fs layer
+2026-09-30T01:24:40.2597871Z c209e9dadc51: Pulling fs layer
+2026-09-30T01:24:40.2599054Z a4925b5c711a: Pulling fs layer
+2026-09-30T01:24:40.2600232Z cd9459784e3c: Pulling fs layer
+2026-09-30T01:24:40.2601771Z bd7e451dfea1: Waiting
+2026-09-30T01:24:40.2602718Z c209e9dadc51: Waiting
+2026-09-30T01:24:40.2603675Z cd9459784e3c: Waiting
+2026-09-30T01:24:40.2604559Z a4925b5c711a: Waiting
+2026-09-30T01:24:40.2605515Z 32b58fa44788: Waiting
+2026-09-30T01:24:40.2606386Z 590ab93c22d2: Waiting
+2026-09-30T01:24:40.2607405Z 26ea96c4c14c: Waiting
+2026-09-30T01:24:40.3554374Z 2a328af1ca3a: Verifying Checksum
+2026-09-30T01:24:40.3557115Z 2a328af1ca3a: Download complete
+2026-09-30T01:24:40.4354756Z 165b60d1bb48: Verifying Checksum
+2026-09-30T01:24:40.4357427Z 165b60d1bb48: Download complete
+2026-09-30T01:24:40.4604035Z efc2b5ad9eec: Verifying Checksum
+2026-09-30T01:24:40.4607102Z efc2b5ad9eec: Download complete
+2026-09-30T01:24:40.5311539Z 590ab93c22d2: Download complete
+2026-09-30T01:24:40.6053202Z 32b58fa44788: Verifying Checksum
+2026-09-30T01:24:40.6055841Z 32b58fa44788: Download complete
+2026-09-30T01:24:40.6264436Z bd7e451dfea1: Verifying Checksum
+2026-09-30T01:24:40.6266613Z bd7e451dfea1: Download complete
+2026-09-30T01:24:40.7514478Z a4925b5c711a: Verifying Checksum
+2026-09-30T01:24:40.7545073Z a4925b5c711a: Download complete
+2026-09-30T01:24:40.8497370Z cd9459784e3c: Verifying Checksum
+2026-09-30T01:24:40.8503357Z cd9459784e3c: Download complete
+2026-09-30T01:24:40.8553392Z c209e9dadc51: Verifying Checksum
+2026-09-30T01:24:40.8556476Z c209e9dadc51: Download complete
+2026-09-30T01:24:41.2682758Z 26ea96c4c14c: Verifying Checksum
+2026-09-30T01:24:41.2684469Z 26ea96c4c14c: Download complete
+2026-09-30T01:24:41.9168007Z efc2b5ad9eec: Pull complete
+2026-09-30T01:24:45.5756353Z 165b60d1bb48: Pull complete
+2026-09-30T01:24:45.5870844Z 2a328af1ca3a: Pull complete
+2026-09-30T01:24:46.5946937Z 32b58fa44788: Pull complete
+2026-09-30T01:24:46.6048119Z 590ab93c22d2: Pull complete
+2026-09-30T01:24:50.8592515Z 26ea96c4c14c: Pull complete
+2026-09-30T01:24:50.8690309Z bd7e451dfea1: Pull complete
+2026-09-30T01:24:52.9981843Z c209e9dadc51: Pull complete
+2026-09-30T01:24:53.0256570Z a4925b5c711a: Pull complete
+2026-09-30T01:24:53.0398515Z cd9459784e3c: Pull complete
+2026-09-30T01:24:53.0431919Z Digest: sha256:6791ebfd912185ed59bfb5fb102664fa872496b79f87ff8b9cfba292a7345041
+2026-09-30T01:24:53.0442893Z Status: Downloaded newer image for ghcr.io/actions/jekyll-build-pages:v1.0.13
+2026-09-30T01:24:53.0462939Z ghcr.io/actions/jekyll-build-pages:v1.0.13
+2026-09-30T01:24:53.0491808Z ##[endgroup]
+2026-09-30T01:24:53.0789150Z ##[group]Run actions/checkout@v7.0.1
+2026-09-30T01:24:53.0789786Z with:
+2026-09-30T01:24:53.0789984Z   ref: main
+2026-09-30T01:24:53.0790182Z   submodules: recursive
+2026-09-30T01:24:53.0790430Z   repository: shafiyyahaz/matcha-latte
+2026-09-30T01:24:53.0793050Z   token: ***
+2026-09-30T01:24:53.0793261Z   ssh-strict: true
+2026-09-30T01:24:53.0793467Z   ssh-user: git
+2026-09-30T01:24:53.0793686Z   persist-credentials: true
+2026-09-30T01:24:53.0793916Z   clean: true
+2026-09-30T01:24:53.0794144Z   sparse-checkout-cone-mode: true
+2026-09-30T01:24:53.0794409Z   fetch-depth: 1
+2026-09-30T01:24:53.0794606Z   fetch-tags: false
+2026-09-30T01:24:53.0794809Z   show-progress: true
+2026-09-30T01:24:53.0795011Z   lfs: false
+2026-09-30T01:24:53.0795228Z   set-safe-directory: true
+2026-09-30T01:24:53.0795497Z   allow-unsafe-pr-checkout: false
+2026-09-30T01:24:53.0796001Z ##[endgroup]
+2026-09-30T01:24:53.1885168Z Syncing repository: shafiyyahaz/matcha-latte
+2026-09-30T01:24:53.1887170Z ##[group]Getting Git version info
+2026-09-30T01:24:53.1887832Z Working directory is '/home/runner/work/matcha-latte/matcha-latte'
+2026-09-30T01:24:53.1888751Z [command]/usr/bin/git version
+2026-09-30T01:24:53.1950903Z git version 2.55.0
+2026-09-30T01:24:53.1977804Z ##[endgroup]
+2026-09-30T01:24:53.1991606Z Temporarily overriding HOME='/home/runner/work/_temp/f13717eb-4815-44d7-9b6a-d0b1c6b0cf9b' before making global git config changes
+2026-09-30T01:24:53.1993208Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-30T01:24:53.1998846Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/matcha-latte/matcha-latte
+2026-09-30T01:24:53.2054328Z Deleting the contents of '/home/runner/work/matcha-latte/matcha-latte'
+2026-09-30T01:24:53.2058609Z ##[group]Determining repository object format
+2026-09-30T01:24:53.4614511Z ##[endgroup]
+2026-09-30T01:24:53.4615746Z ##[group]Initializing the repository
+2026-09-30T01:24:53.4625729Z [command]/usr/bin/git init /home/runner/work/matcha-latte/matcha-latte
+2026-09-30T01:24:53.4753775Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-30T01:24:53.4775428Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-30T01:24:53.4790561Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-30T01:24:53.4791924Z hint: call:
+2026-09-30T01:24:53.4792287Z hint:
+2026-09-30T01:24:53.4792813Z hint: 	git config --global init.defaultBranch <name>
+2026-09-30T01:24:53.4793752Z hint:
+2026-09-30T01:24:53.4794287Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-30T01:24:53.4795483Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-30T01:24:53.4796188Z hint:
+2026-09-30T01:24:53.4796562Z hint: 	git branch -m <name>
+2026-09-30T01:24:53.4796961Z hint:
+2026-09-30T01:24:53.4797527Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-30T01:24:53.4798630Z Initialized empty Git repository in /home/runner/work/matcha-latte/matcha-latte/.git/
+2026-09-30T01:24:53.4800424Z [command]/usr/bin/git remote add origin https://github.com/shafiyyahaz/matcha-latte
+2026-09-30T01:24:53.4864335Z ##[endgroup]
+2026-09-30T01:24:53.4865075Z ##[group]Disabling automatic garbage collection
+2026-09-30T01:24:53.4865711Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-30T01:24:53.5020510Z ##[endgroup]
+2026-09-30T01:24:53.5021673Z ##[group]Setting up auth
+2026-09-30T01:24:53.5023457Z Removing SSH command configuration
+2026-09-30T01:24:53.5024797Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-30T01:24:53.5027943Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-30T01:24:53.5364828Z Removing HTTP extra header
+2026-09-30T01:24:53.5370582Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-30T01:24:53.5419590Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-30T01:24:53.5640884Z Removing includeIf entries pointing to credentials config files
+2026-09-30T01:24:53.5646974Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-30T01:24:53.5687194Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-30T01:24:53.5919220Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-30T01:24:53.5962003Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/matcha-latte/matcha-latte/.git.path /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:53.5999577Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/matcha-latte/matcha-latte/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:53.6041706Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:53.6079527Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:53.6114617Z ##[endgroup]
+2026-09-30T01:24:53.6115271Z ##[group]Fetching the repository
+2026-09-30T01:24:53.6122339Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/main*:refs/remotes/origin/main* +refs/tags/main*:refs/tags/main*
+2026-09-30T01:24:54.0919758Z From https://github.com/shafiyyahaz/matcha-latte
+2026-09-30T01:24:54.0920777Z  * [new branch]      main       -> origin/main
+2026-09-30T01:24:54.0932256Z ##[endgroup]
+2026-09-30T01:24:54.0932641Z ##[group]Determining the checkout info
+2026-09-30T01:24:54.0934226Z [command]/usr/bin/git branch --list --remote origin/main
+2026-09-30T01:24:54.0969185Z   origin/main
+2026-09-30T01:24:54.0974135Z ##[endgroup]
+2026-09-30T01:24:54.0978340Z [command]/usr/bin/git sparse-checkout disable
+2026-09-30T01:24:54.1038705Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-30T01:24:54.1077662Z ##[group]Checking out the ref
+2026-09-30T01:24:54.1081867Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-09-30T01:24:54.1163968Z Switched to a new branch 'main'
+2026-09-30T01:24:54.1169782Z branch 'main' set up to track 'origin/main'.
+2026-09-30T01:24:54.1175211Z ##[endgroup]
+2026-09-30T01:24:54.1175996Z ##[group]Setting up auth for fetching submodules
+2026-09-30T01:24:54.1181327Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-30T01:24:54.1227950Z [command]/usr/bin/git config --global include.path /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:54.1267825Z [command]/usr/bin/git config --global --unset-all url.https://github.com/.insteadOf
+2026-09-30T01:24:54.1316055Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf git@github.com:
+2026-09-30T01:24:54.1357994Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf org-315219647@github.com:
+2026-09-30T01:24:54.1397177Z ##[endgroup]
+2026-09-30T01:24:54.1397775Z ##[group]Fetching submodules
+2026-09-30T01:24:54.1401643Z [command]/usr/bin/git submodule sync --recursive
+2026-09-30T01:24:54.1657702Z [command]/usr/bin/git -c protocol.version=2 submodule update --init --force --depth=1 --recursive
+2026-09-30T01:24:54.1921985Z [command]/usr/bin/git submodule foreach --recursive git config --local gc.auto 0
+2026-09-30T01:24:54.2172889Z ##[endgroup]
+2026-09-30T01:24:54.2173289Z ##[group]Persisting credentials for submodules
+2026-09-30T01:24:54.2181800Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'url\.https\:\/\/github\.com\/\.insteadOf' && git config --local --unset-all 'url.https://github.com/.insteadOf' || :"
+2026-09-30T01:24:54.2450001Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-30T01:24:54.2701360Z [command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'git@github.com:'
+2026-09-30T01:24:54.2978991Z [command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 'org-315219647@github.com:'
+2026-09-30T01:24:54.3335290Z ##[endgroup]
+2026-09-30T01:24:54.3399067Z [command]/usr/bin/git log -1 --format=%H
+2026-09-30T01:24:54.3434122Z 0e44b29115a1b02431ba6816f3f6628cf1450c5e
+2026-09-30T01:24:54.3651595Z ##[group]Run actions/jekyll-build-pages@v1
+2026-09-30T01:24:54.3651922Z with:
+2026-09-30T01:24:54.3652110Z   source: .
+2026-09-30T01:24:54.3652297Z   destination: ./_site
+2026-09-30T01:24:54.3652522Z   future: false
+2026-09-30T01:24:54.3652817Z   build_revision: 0e44b29115a1b02431ba6816f3f6628cf1450c5e
+2026-09-30T01:24:54.3653151Z   verbose: true
+2026-09-30T01:24:54.3655438Z   token: ***
+2026-09-30T01:24:54.3655638Z ##[endgroup]
+2026-09-30T01:24:54.3753467Z ##[command]/usr/bin/docker run --name ghcrioactionsjekyllbuildpagesv1013_60bf57 --label 39e3ef --workdir /github/workspace --rm -e "INPUT_SOURCE" -e "INPUT_DESTINATION" -e "INPUT_FUTURE" -e "INPUT_BUILD_REVISION" -e "INPUT_VERBOSE" -e "INPUT_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "GITHUB_ARTIFACTS" -e "GITHUB_ARTIFACTS_LIST" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_ID_TOKEN_REQUEST_URL" -e "ACTIONS_ID_TOKEN_REQUEST_TOKEN" -e "ACTIONS_RESULTS_URL" -e "ACTIONS_CACHE_MODE" -e "ACTIONS_ORCHESTRATION_ID" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp":"/github/runner_temp" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/matcha-latte/matcha-latte":"/github/workspace" ghcr.io/actions/jekyll-build-pages:v1.0.13
+2026-09-30T01:24:55.1444103Z [33mConfiguration file: none[0m
+2026-09-30T01:24:55.2577569Z To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+2026-09-30T01:24:57.1806458Z   Logging at level: debug
+2026-09-30T01:24:57.1807245Z       GitHub Pages: github-pages v232
+2026-09-30T01:24:57.1808845Z       GitHub Pages: jekyll v3.10.0
+2026-09-30T01:24:57.1810084Z              Theme: jekyll-theme-primer
+2026-09-30T01:24:57.1810698Z       Theme source: /usr/local/bundle/gems/jekyll-theme-primer-0.6.0
+2026-09-30T01:24:57.1811538Z          Requiring: jekyll-github-metadata
+2026-09-30T01:24:57.1812003Z          Requiring: jekyll-seo-tag
+2026-09-30T01:24:57.1812451Z          Requiring: jekyll-coffeescript
+2026-09-30T01:24:57.1812816Z          Requiring: jekyll-commonmark-ghpages
+2026-09-30T01:24:57.1813111Z          Requiring: jekyll-gist
+2026-09-30T01:24:57.1813365Z          Requiring: jekyll-github-metadata
+2026-09-30T01:24:57.1813641Z          Requiring: jekyll-paginate
+2026-09-30T01:24:57.1813924Z          Requiring: jekyll-relative-links
+2026-09-30T01:24:57.1814230Z          Requiring: jekyll-optional-front-matter
+2026-09-30T01:24:57.1814537Z          Requiring: jekyll-readme-index
+2026-09-30T01:24:57.1814813Z          Requiring: jekyll-default-layout
+2026-09-30T01:24:57.1815110Z          Requiring: jekyll-titles-from-headings
+2026-09-30T01:24:57.1815480Z    GitHub Metadata: Initializing...
+2026-09-30T01:24:57.1815915Z             Source: /github/workspace/.
+2026-09-30T01:24:57.1816371Z        Destination: /github/workspace/./_site
+2026-09-30T01:24:57.1816719Z  Incremental build: disabled. Enable with --incremental
+2026-09-30T01:24:57.1817347Z       Generating... 
+2026-09-30T01:24:57.1823132Z         Generating: JekyllOptionalFrontMatter::Generator finished in 0.000222692 seconds.
+2026-09-30T01:24:57.1824024Z         Generating: JekyllReadmeIndex::Generator finished in 0.00150685 seconds.
+2026-09-30T01:24:57.1824540Z         Generating: Jekyll::Paginate::Pagination finished in 4.91e-06 seconds.
+2026-09-30T01:24:57.1825091Z         Generating: JekyllRelativeLinks::Generator finished in 5.5791e-05 seconds.
+2026-09-30T01:24:57.1825715Z         Generating: JekyllDefaultLayout::Generator finished in 4.8557e-05 seconds.
+2026-09-30T01:24:57.1826191Z          Requiring: kramdown-parser-gfm
+2026-09-30T01:24:57.1826759Z         Generating: JekyllTitlesFromHeadings::Generator finished in 0.010666498 seconds.
+2026-09-30T01:24:57.1827642Z          Rendering: assets/css/style.scss
+2026-09-30T01:24:57.1827934Z   Pre-Render Hooks: assets/css/style.scss
+2026-09-30T01:24:57.1829154Z   Rendering Markup: assets/css/style.scss
+2026-09-30T01:24:57.1829451Z          Rendering: PHOTO-SOURCES.md
+2026-09-30T01:24:57.1830666Z   Pre-Render Hooks: PHOTO-SOURCES.md
+2026-09-30T01:24:57.1831282Z   Rendering Markup: PHOTO-SOURCES.md
+2026-09-30T01:24:57.1832441Z   Rendering Layout: PHOTO-SOURCES.md
+2026-09-30T01:24:57.1833124Z      Layout source: theme
+2026-09-30T01:24:57.1834620Z    GitHub Metadata: Generating for shafiyyahaz/matcha-latte
+2026-09-30T01:24:57.1835953Z    GitHub Metadata: Calling @client.repository("shafiyyahaz/matcha-latte", {:accept=>"application/vnd.github.drax-preview+json"})
+2026-09-30T01:24:57.1836647Z    GitHub Metadata: Calling @client.pages("shafiyyahaz/matcha-latte", {})
+2026-09-30T01:24:57.1837084Z            Writing: /github/workspace/_site/assets/css/style.css
+2026-09-30T01:24:57.1837456Z            Writing: /github/workspace/_site/PHOTO-SOURCES.html
+2026-09-30T01:24:57.1837773Z                     done in 1.644 seconds.
+2026-09-30T01:24:57.1838077Z  Auto-regeneration: disabled. Use --watch to enable.
+2026-09-30T01:24:57.2680768Z ##[group]Run actions/upload-pages-artifact@v3
+2026-09-30T01:24:57.2681459Z with:
+2026-09-30T01:24:57.2681659Z   path: ./_site
+2026-09-30T01:24:57.2681863Z   name: github-pages
+2026-09-30T01:24:57.2682087Z   retention-days: 1
+2026-09-30T01:24:57.2682284Z ##[endgroup]
+2026-09-30T01:24:57.2746708Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run]
+2026-09-30T01:24:57.2794891Z ##[group]Run echo ::group::Archive artifact
+2026-09-30T01:24:57.2795265Z [36;1mecho ::group::Archive artifact[0m
+2026-09-30T01:24:57.2795542Z [36;1mtar \[0m
+2026-09-30T01:24:57.2795795Z [36;1m  --dereference --hard-dereference \[0m
+2026-09-30T01:24:57.2796113Z [36;1m  --directory "$INPUT_PATH" \[0m
+2026-09-30T01:24:57.2796428Z [36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \[0m
+2026-09-30T01:24:57.2796736Z [36;1m  --exclude=.git \[0m
+2026-09-30T01:24:57.2796987Z [36;1m  --exclude=.github \[0m
+2026-09-30T01:24:57.2797222Z [36;1m  .[0m
+2026-09-30T01:24:57.2797479Z [36;1mecho ::endgroup::[0m
+2026-09-30T01:24:57.2826607Z shell: /usr/bin/sh -e {0}
+2026-09-30T01:24:57.2826863Z env:
+2026-09-30T01:24:57.2827057Z   INPUT_PATH: ./_site
+2026-09-30T01:24:57.2827277Z ##[endgroup]
+2026-09-30T01:24:57.2887568Z ##[group]Archive artifact
+2026-09-30T01:24:57.2905763Z ./
+2026-09-30T01:24:57.2906105Z ./js/
+2026-09-30T01:24:57.2906436Z ./js/app.js
+2026-09-30T01:24:57.2906775Z ./script.js
+2026-09-30T01:24:57.2907128Z ./PHOTO-SOURCES.md
+2026-09-30T01:24:57.2907617Z ./css/
+2026-09-30T01:24:57.2907975Z ./css/style.css
+2026-09-30T01:24:57.2908238Z ./assets/
+2026-09-30T01:24:57.2908438Z ./assets/css/
+2026-09-30T01:24:57.2908728Z ./assets/css/style.css
+2026-09-30T01:24:57.2909256Z ./PHOTO-SOURCES.html
+2026-09-30T01:24:57.2909676Z ./index.html
+2026-09-30T01:24:57.2910012Z ./images-real/
+2026-09-30T01:24:57.2910369Z ./images-real/index.html
+2026-09-30T01:24:57.2910781Z ./README.md
+2026-09-30T01:24:57.2911367Z ./images/
+2026-09-30T01:24:57.2911701Z ./images/favicon.svg
+2026-09-30T01:24:57.2912094Z ./images/matcha-cloud.svg
+2026-09-30T01:24:57.2912510Z ./images/classic-matcha.svg
+2026-09-30T01:24:57.2912941Z ./images/boba-matcha.svg
+2026-09-30T01:24:57.2913333Z ./images/honey-matcha.svg
+2026-09-30T01:24:57.2913752Z ./images/chocolate-matcha.svg
+2026-09-30T01:24:57.2914186Z ./images/IMAGE-NOTE.txt
+2026-09-30T01:24:57.2914563Z ./images/index.html
+2026-09-30T01:24:57.2914978Z ./images/hero-matcha.jpg
+2026-09-30T01:24:57.2915399Z ./images/dirty-matcha.svg
+2026-09-30T01:24:57.2915794Z ./images/rose-matcha.svg
+2026-09-30T01:24:57.2916182Z ./images/choco-matcha.svg
+2026-09-30T01:24:57.2916566Z ./images/mango-matcha.svg
+2026-09-30T01:24:57.2916972Z ./images/classic-matcha-latte.svg
+2026-09-30T01:24:57.2917406Z ./images/coconut-matcha.svg
+2026-09-30T01:24:57.2917830Z ./images/strawberry-matcha.svg
+2026-09-30T01:24:57.2918258Z ./style.css
+2026-09-30T01:24:57.2918662Z ##[endgroup]
+2026-09-30T01:24:57.2932727Z ##[end-action id=__actions_upload-pages-artifact.__run;outcome=success;conclusion=success;duration_ms=18]
+2026-09-30T01:24:57.2935830Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_2]
+2026-09-30T01:24:57.2940591Z ##[end-action id=__actions_upload-pages-artifact.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-09-30T01:24:57.2943740Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_3]
+2026-09-30T01:24:57.2947247Z ##[end-action id=__actions_upload-pages-artifact.__run_3;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-09-30T01:24:57.2949362Z ##[start-action display=Upload artifact;id=__actions_upload-pages-artifact.upload-artifact]
+2026-09-30T01:24:57.3004551Z ##[group]Run actions/upload-artifact@v4
+2026-09-30T01:24:57.3004855Z with:
+2026-09-30T01:24:57.3005059Z   name: github-pages
+2026-09-30T01:24:57.3005321Z   path: /home/runner/work/_temp/artifact.tar
+2026-09-30T01:24:57.3005625Z   retention-days: 1
+2026-09-30T01:24:57.3005845Z   if-no-files-found: error
+2026-09-30T01:24:57.3006078Z   compression-level: 6
+2026-09-30T01:24:57.3006511Z   overwrite: false
+2026-09-30T01:24:57.3006735Z   include-hidden-files: false
+2026-09-30T01:24:57.3006976Z ##[endgroup]
+2026-09-30T01:24:57.4656704Z (node:2596) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-30T01:24:57.4657444Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-30T01:24:57.4703639Z With the provided path, there will be 1 file uploaded
+2026-09-30T01:24:57.4710187Z Artifact name is valid!
+2026-09-30T01:24:57.4711232Z Root directory input is valid!
+2026-09-30T01:24:57.7003565Z Beginning upload of artifact content to blob storage
+2026-09-30T01:24:57.7260474Z (node:2596) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-09-30T01:24:57.8604524Z Uploaded bytes 124645
+2026-09-30T01:24:57.8881877Z Finished uploading artifact content to blob storage!
+2026-09-30T01:24:57.8887557Z SHA256 digest of uploaded artifact zip is 50c03786149de4c8fc18cbccd3a645f598f6d3a292f7fe9832e14b861f344646
+2026-09-30T01:24:57.8888346Z Finalizing artifact upload
+2026-09-30T01:24:58.1258680Z Artifact github-pages.zip successfully finalized. Artifact ID 11071164823
+2026-09-30T01:24:58.1260079Z Artifact github-pages has been successfully uploaded! Final size is 124645 bytes. Artifact ID is 11071164823
+2026-09-30T01:24:58.1266563Z Artifact download URL: https://github.com/shafiyyahaz/matcha-latte/actions/runs/36654966681/artifacts/11071164823
+2026-09-30T01:24:58.1373393Z ##[end-action id=__actions_upload-pages-artifact.upload-artifact;outcome=success;conclusion=success;duration_ms=842]
+2026-09-30T01:24:58.1509422Z Post job cleanup.
+2026-09-30T01:24:58.2324804Z [command]/usr/bin/git version
+2026-09-30T01:24:58.2369000Z git version 2.55.0
+2026-09-30T01:24:58.2418081Z Temporarily overriding HOME='/home/runner/work/_temp/73e3a9c4-e9c6-429d-8000-931bf749325f' before making global git config changes
+2026-09-30T01:24:58.2419113Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-30T01:24:58.2425180Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/matcha-latte/matcha-latte
+2026-09-30T01:24:58.2464866Z Removing SSH command configuration
+2026-09-30T01:24:58.2472123Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-30T01:24:58.2509995Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-30T01:24:58.2772373Z Removing HTTP extra header
+2026-09-30T01:24:58.2779132Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-30T01:24:58.2817663Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-30T01:24:58.3072667Z Removing includeIf entries pointing to credentials config files
+2026-09-30T01:24:58.3080834Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-30T01:24:58.3116835Z includeif.gitdir:/home/runner/work/matcha-latte/matcha-latte/.git.path
+2026-09-30T01:24:58.3125796Z includeif.gitdir:/home/runner/work/matcha-latte/matcha-latte/.git/worktrees/*.path
+2026-09-30T01:24:58.3127202Z includeif.gitdir:/github/workspace/.git.path
+2026-09-30T01:24:58.3128211Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-09-30T01:24:58.3130663Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/matcha-latte/matcha-latte/.git.path
+2026-09-30T01:24:58.3156757Z /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:58.3179294Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/matcha-latte/matcha-latte/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-007c9808\-115e\-467d\-8b20\-a74cdef9a668\.config
+2026-09-30T01:24:58.3217357Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/matcha-latte/matcha-latte/.git/worktrees/*.path
+2026-09-30T01:24:58.3259340Z /home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:58.3272304Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/matcha-latte/matcha-latte/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-007c9808\-115e\-467d\-8b20\-a74cdef9a668\.config
+2026-09-30T01:24:58.3315243Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-09-30T01:24:58.3339668Z /github/runner_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:58.3353552Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-007c9808\-115e\-467d\-8b20\-a74cdef9a668\.config
+2026-09-30T01:24:58.3390080Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-09-30T01:24:58.3429053Z /github/runner_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config
+2026-09-30T01:24:58.3450897Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-007c9808\-115e\-467d\-8b20\-a74cdef9a668\.config
+2026-09-30T01:24:58.3489173Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-30T01:24:58.3738741Z Removing credentials config '/home/runner/work/_temp/git-credentials-007c9808-115e-467d-8b20-a74cdef9a668.config'
+2026-09-30T01:24:58.3908793Z Cleaning up orphan processes
+2026-09-30T01:24:58.4266380Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

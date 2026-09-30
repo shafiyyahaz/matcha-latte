@@ -1,0 +1,56 @@
+﻿2026-09-30T01:24:54.3651581Z ##[group]Run actions/jekyll-build-pages@v1
+2026-09-30T01:24:54.3651918Z with:
+2026-09-30T01:24:54.3652107Z   source: .
+2026-09-30T01:24:54.3652295Z   destination: ./_site
+2026-09-30T01:24:54.3652520Z   future: false
+2026-09-30T01:24:54.3652815Z   build_revision: 0e44b29115a1b02431ba6816f3f6628cf1450c5e
+2026-09-30T01:24:54.3653149Z   verbose: true
+2026-09-30T01:24:54.3655436Z   token: ***
+2026-09-30T01:24:54.3655636Z ##[endgroup]
+2026-09-30T01:24:54.3753401Z ##[command]/usr/bin/docker run --name ghcrioactionsjekyllbuildpagesv1013_60bf57 --label 39e3ef --workdir /github/workspace --rm -e "INPUT_SOURCE" -e "INPUT_DESTINATION" -e "INPUT_FUTURE" -e "INPUT_BUILD_REVISION" -e "INPUT_VERBOSE" -e "INPUT_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "GITHUB_ARTIFACTS" -e "GITHUB_ARTIFACTS_LIST" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_ID_TOKEN_REQUEST_URL" -e "ACTIONS_ID_TOKEN_REQUEST_TOKEN" -e "ACTIONS_RESULTS_URL" -e "ACTIONS_CACHE_MODE" -e "ACTIONS_ORCHESTRATION_ID" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp":"/github/runner_temp" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/matcha-latte/matcha-latte":"/github/workspace" ghcr.io/actions/jekyll-build-pages:v1.0.13
+2026-09-30T01:24:55.1444062Z [33mConfiguration file: none[0m
+2026-09-30T01:24:55.2577525Z To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+2026-09-30T01:24:57.1806421Z   Logging at level: debug
+2026-09-30T01:24:57.1807239Z       GitHub Pages: github-pages v232
+2026-09-30T01:24:57.1808834Z       GitHub Pages: jekyll v3.10.0
+2026-09-30T01:24:57.1810060Z              Theme: jekyll-theme-primer
+2026-09-30T01:24:57.1810693Z       Theme source: /usr/local/bundle/gems/jekyll-theme-primer-0.6.0
+2026-09-30T01:24:57.1811532Z          Requiring: jekyll-github-metadata
+2026-09-30T01:24:57.1811997Z          Requiring: jekyll-seo-tag
+2026-09-30T01:24:57.1812418Z          Requiring: jekyll-coffeescript
+2026-09-30T01:24:57.1812812Z          Requiring: jekyll-commonmark-ghpages
+2026-09-30T01:24:57.1813108Z          Requiring: jekyll-gist
+2026-09-30T01:24:57.1813363Z          Requiring: jekyll-github-metadata
+2026-09-30T01:24:57.1813639Z          Requiring: jekyll-paginate
+2026-09-30T01:24:57.1813922Z          Requiring: jekyll-relative-links
+2026-09-30T01:24:57.1814219Z          Requiring: jekyll-optional-front-matter
+2026-09-30T01:24:57.1814535Z          Requiring: jekyll-readme-index
+2026-09-30T01:24:57.1814810Z          Requiring: jekyll-default-layout
+2026-09-30T01:24:57.1815108Z          Requiring: jekyll-titles-from-headings
+2026-09-30T01:24:57.1815476Z    GitHub Metadata: Initializing...
+2026-09-30T01:24:57.1815911Z             Source: /github/workspace/.
+2026-09-30T01:24:57.1816368Z        Destination: /github/workspace/./_site
+2026-09-30T01:24:57.1816717Z  Incremental build: disabled. Enable with --incremental
+2026-09-30T01:24:57.1817059Z       Generating... 
+2026-09-30T01:24:57.1823120Z         Generating: JekyllOptionalFrontMatter::Generator finished in 0.000222692 seconds.
+2026-09-30T01:24:57.1824020Z         Generating: JekyllReadmeIndex::Generator finished in 0.00150685 seconds.
+2026-09-30T01:24:57.1824537Z         Generating: Jekyll::Paginate::Pagination finished in 4.91e-06 seconds.
+2026-09-30T01:24:57.1825088Z         Generating: JekyllRelativeLinks::Generator finished in 5.5791e-05 seconds.
+2026-09-30T01:24:57.1825712Z         Generating: JekyllDefaultLayout::Generator finished in 4.8557e-05 seconds.
+2026-09-30T01:24:57.1826189Z          Requiring: kramdown-parser-gfm
+2026-09-30T01:24:57.1826756Z         Generating: JekyllTitlesFromHeadings::Generator finished in 0.010666498 seconds.
+2026-09-30T01:24:57.1827639Z          Rendering: assets/css/style.scss
+2026-09-30T01:24:57.1827933Z   Pre-Render Hooks: assets/css/style.scss
+2026-09-30T01:24:57.1829152Z   Rendering Markup: assets/css/style.scss
+2026-09-30T01:24:57.1829441Z          Rendering: PHOTO-SOURCES.md
+2026-09-30T01:24:57.1830664Z   Pre-Render Hooks: PHOTO-SOURCES.md
+2026-09-30T01:24:57.1831277Z   Rendering Markup: PHOTO-SOURCES.md
+2026-09-30T01:24:57.1832430Z   Rendering Layout: PHOTO-SOURCES.md
+2026-09-30T01:24:57.1833120Z      Layout source: theme
+2026-09-30T01:24:57.1834616Z    GitHub Metadata: Generating for shafiyyahaz/matcha-latte
+2026-09-30T01:24:57.1835950Z    GitHub Metadata: Calling @client.repository("shafiyyahaz/matcha-latte", {:accept=>"application/vnd.github.drax-preview+json"})
+2026-09-30T01:24:57.1836645Z    GitHub Metadata: Calling @client.pages("shafiyyahaz/matcha-latte", {})
+2026-09-30T01:24:57.1837082Z            Writing: /github/workspace/_site/assets/css/style.css
+2026-09-30T01:24:57.1837454Z            Writing: /github/workspace/_site/PHOTO-SOURCES.html
+2026-09-30T01:24:57.1837770Z                     done in 1.644 seconds.
+2026-09-30T01:24:57.1838075Z  Auto-regeneration: disabled. Use --watch to enable.
