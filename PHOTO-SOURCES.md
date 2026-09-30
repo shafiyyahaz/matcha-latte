@@ -12,3 +12,6 @@ The current 8-menu version uses these real matcha-related Pexels photos:
 - Chocolate Matcha — https://www.pexels.com/photo/green-drink-on-wooden-table-14262578/
 
 Images load from Pexels CDN URLs, so the site needs an internet connection to display them.
+
+
+Hero image: generated for this Matcha Latte redesign and saved locally as images/hero-matcha.jpg.
