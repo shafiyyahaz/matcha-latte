@@ -18,3 +18,6 @@ Aesthetic Japanese-inspired matcha café website.
 
 ## Run
 Open `index.html` in a browser or deploy the folder to GitHub Pages.
+
+### Story section refresh
+The Matcha Ritual / Story section now uses softer editorial copy and an airy matcha-sage-cream background with subtle decorative rings, while keeping the original layout.
