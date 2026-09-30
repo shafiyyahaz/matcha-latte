@@ -6,8 +6,7 @@ const products=[
 ['hot','Hot Matcha Latte',30000,'creamy','https://images.pexels.com/photos/8004570/pexels-photo-8004570.jpeg?auto=compress&cs=tinysrgb&w=1400','Warm, delicate & comforting.'],
 ['tall','Iced Matcha',30000,'fresh','https://images.pexels.com/photos/35852545/pexels-photo-35852545.jpeg?auto=compress&cs=tinysrgb&w=1400','Bright, clean & refreshing.'],
 ['cloud','Matcha Cloud',33000,'creamy','https://images.pexels.com/photos/33493391/pexels-photo-33493391.jpeg?auto=compress&cs=tinysrgb&w=1400','Creamy layers with a soft, dreamy finish.'],
-['choco','Chocolate Matcha',33000,'creamy','https://images.pexels.com/photos/14262578/pexels-photo-14262578.jpeg?auto=compress&cs=tinysrgb&w=1400','Cocoa comfort with green tea.'],
-['rose','Rose Matcha',33000,'floral','https://images.pexels.com/photos/16373047/pexels-photo-16373047.jpeg?auto=compress&cs=tinysrgb&w=1400','A gentle floral mood with a pink rose.']
+['choco','Chocolate Matcha',33000,'creamy','https://images.pexels.com/photos/14262578/pexels-photo-14262578.jpeg?auto=compress&cs=tinysrgb&w=1400','Cocoa comfort with green tea.']
 ];
 let bag=[];const rupiah=n=>new Intl.NumberFormat('id-ID',{style:'currency',currency:'IDR',maximumFractionDigits:0}).format(n);const grid=document.querySelector('#grid');
 function render(f='all'){grid.innerHTML=products.filter(p=>f==='all'||p[3]===f).map(p=>`<article class="card"><img src="${p[4]}" alt="${p[1]}" loading="lazy"><div class="card-body"><h3>${p[1]}</h3><p>${p[5]}</p><div class="row"><b>${rupiah(p[2])}</b><button class="plus" onclick="add('${p[0]}')">+</button></div></div></article>`).join('')}

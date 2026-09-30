@@ -6,7 +6,7 @@ Aesthetic Japanese-inspired matcha café website.
 - Real food/café photography from free-to-use Pexels and Wikimedia Commons sources.
 - Softer editorial layout with warm natural-light imagery.
 - Added a dedicated café-space section so the site shows both drinks and the atmosphere.
-- Added Rose Matcha and a Floral filter.
+- Removed Rose Matcha so the menu now has 8 drinks and stays evenly balanced.
 - Existing menu filters, bag, Surprise Me and WhatsApp ordering are retained.
 
 ## Image sources

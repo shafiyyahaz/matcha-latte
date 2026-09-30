@@ -10,7 +10,6 @@ The website uses real food/café photography from free-to-use Pexels pages.
 - Iced: https://www.pexels.com/photo/layered-iced-matcha-latte-on-white-surface-35852545/
 - Cloud: https://www.pexels.com/photo/refreshing-layered-iced-matcha-latte-on-wooden-table-33493391/
 - Chocolate: https://www.pexels.com/photo/green-drink-on-wooden-table-14262578/
-- Rose: https://www.pexels.com/photo/cold-drink-and-rose-in-glass-bottle-16373047/
 - Journal: https://www.pexels.com/photo/matcha-powder-on-the-table-8004563/
 
 All image URLs are loaded directly from their source pages/CDN, so an internet connection is required for the photos to appear on GitHub Pages.
