@@ -1,12 +1,13 @@
 const products=[
-['classic','Classic Matcha Latte',28000,'creamy','https://upload.wikimedia.org/wikipedia/commons/2/25/Matcha_Tea_Latte_%286293795173%29.jpg','Silky, earthy & mellow.'],
-['strawberry','Strawberry Matcha',32000,'fresh','https://images.pexels.com/photos/34491288/pexels-photo-34491288.jpeg?auto=compress&cs=tinysrgb&w=1200','Sweet berries meet earthy green.'],
-['mango','Mango Matcha',32000,'fresh','https://images.pexels.com/photos/37105479/pexels-photo-37105479.jpeg?auto=compress&cs=tinysrgb&w=1200','Tropical, bright & refreshing.'],
-['coconut','Coconut Matcha',30000,'creamy','https://upload.wikimedia.org/wikipedia/commons/c/cb/Coconut_Milk_Matcha_Latte.jpg','Soft, creamy & lightly tropical.'],
-['hot','Hot Matcha Latte',30000,'creamy','https://upload.wikimedia.org/wikipedia/commons/f/f7/Hot_Matcha_Latte.jpg','Warm, delicate & comforting.'],
-['tall','Iced Matcha',30000,'fresh','https://upload.wikimedia.org/wikipedia/commons/c/ce/Matcha_latte_in_tall_glass.jpg','Bright, clean & refreshing.'],
-['cloud','Matcha Cloud',33000,'creamy','https://upload.wikimedia.org/wikipedia/commons/8/8e/Matcha_Latte_im_Glas.jpg','Light, foamy & dreamy.'],
-['choco','Chocolate Matcha',33000,'creamy','https://images.pexels.com/photos/14262578/pexels-photo-14262578.jpeg?auto=compress&cs=tinysrgb&w=1200','Cocoa comfort with green tea.']
+['classic','Classic Matcha Latte',28000,'creamy','https://images.pexels.com/photos/35672623/pexels-photo-35672623.jpeg?auto=compress&cs=tinysrgb&w=1400','Soft latte art, golden-hour light & a calm café mood.'],
+['strawberry','Strawberry Matcha',32000,'fresh','https://images.pexels.com/photos/34491288/pexels-photo-34491288.jpeg?auto=compress&cs=tinysrgb&w=1400','Sweet berries meet earthy green.'],
+['mango','Mango Matcha',32000,'fresh','https://images.pexels.com/photos/37105479/pexels-photo-37105479.jpeg?auto=compress&cs=tinysrgb&w=1400','Tropical, bright & refreshing.'],
+['coconut','Coconut Matcha',30000,'creamy','https://images.pexels.com/photos/37033512/pexels-photo-37033512.jpeg?auto=compress&cs=tinysrgb&w=1400','Soft, creamy & lightly tropical.'],
+['hot','Hot Matcha Latte',30000,'creamy','https://images.pexels.com/photos/8004570/pexels-photo-8004570.jpeg?auto=compress&cs=tinysrgb&w=1400','Warm, delicate & comforting.'],
+['tall','Iced Matcha',30000,'fresh','https://images.pexels.com/photos/35852545/pexels-photo-35852545.jpeg?auto=compress&cs=tinysrgb&w=1400','Bright, clean & refreshing.'],
+['cloud','Matcha Cloud',33000,'creamy','https://images.pexels.com/photos/33493391/pexels-photo-33493391.jpeg?auto=compress&cs=tinysrgb&w=1400','Creamy layers with a soft, dreamy finish.'],
+['choco','Chocolate Matcha',33000,'creamy','https://images.pexels.com/photos/14262578/pexels-photo-14262578.jpeg?auto=compress&cs=tinysrgb&w=1400','Cocoa comfort with green tea.'],
+['rose','Rose Matcha',33000,'floral','https://images.pexels.com/photos/16373047/pexels-photo-16373047.jpeg?auto=compress&cs=tinysrgb&w=1400','A gentle floral mood with a pink rose.']
 ];
 let bag=[];const rupiah=n=>new Intl.NumberFormat('id-ID',{style:'currency',currency:'IDR',maximumFractionDigits:0}).format(n);const grid=document.querySelector('#grid');
 function render(f='all'){grid.innerHTML=products.filter(p=>f==='all'||p[3]===f).map(p=>`<article class="card"><img src="${p[4]}" alt="${p[1]}" loading="lazy"><div class="card-body"><h3>${p[1]}</h3><p>${p[5]}</p><div class="row"><b>${rupiah(p[2])}</b><button class="plus" onclick="add('${p[0]}')">+</button></div></div></article>`).join('')}
