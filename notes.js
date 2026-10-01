@@ -1,23 +1,11 @@
 const notes=[
-"Pelan-pelan saja. Hal indah juga tumbuh dengan waktu.",
-"You are allowed to have soft days, too.",
-"Semoga hari ini terasa selembut cahaya pagi.",
-"One small step is still a step forward.",
-"Tarik napas. Kamu tidak harus menyelesaikan semuanya hari ini.",
-"May your little efforts bloom into something beautiful.",
-"Keep going gently. Your pace is still a pace.",
-"Semoga ada satu hal kecil hari ini yang membuatmu tersenyum.",
-"Rest is not falling behind. It is making room to breathe.",
-"Let today be simple, warm, and a little bit green."
+["Good things take time. Let yourself grow gently.","today’s little reminder"],
+["You don’t have to rush a beautiful chapter.","a soft thought for you"],
+["Small moments can hold the sweetest kind of magic.","keep this little moment"],
+["Breathe in. Slow down. There is still so much beauty ahead.","one gentle breath"],
+["May today feel a little softer, lighter, and greener.","a tiny wish for today"],
+["You are allowed to enjoy the little things.","save this feeling"],
+["Take your time. Your story is still blooming.","for your growing days"]
 ];
-const quote=document.querySelector('#quote'), num=document.querySelector('#noteNumber'), button=document.querySelector('#another');
-let last=0;
-function nextNote(){
-  let i=Math.floor(Math.random()*notes.length);
-  while(i===last && notes.length>1)i=Math.floor(Math.random()*notes.length);
-  last=i;
-  quote.style.opacity='0';
-  quote.style.transform='translateY(8px)';
-  setTimeout(()=>{quote.textContent=notes[i];num.textContent=String(i+1).padStart(2,'0');quote.style.opacity='1';quote.style.transform='translateY(0)'},180);
-}
-button.addEventListener('click',nextNote);
+const q=document.getElementById('quote'),t=document.getElementById('tiny'),b=document.getElementById('newNote');
+b.addEventListener('click',()=>{const [a,c]=notes[Math.floor(Math.random()*notes.length)];q.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:380,easing:'ease-out'});q.textContent='“'+a+'”';t.textContent=c;});
