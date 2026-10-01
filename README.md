@@ -21,3 +21,8 @@ Rose Matcha has been completely removed from the menu, JavaScript product data, 
 - `script.js` — menu, filters, bag and WhatsApp order behavior
 - `PHOTO-SOURCES.md` — current photo source pages
 - `images/favicon.svg` — favicon
+
+## Added page
+- `notes.html` — Sweet Notes page with soft matcha-inspired messages.
+- `notes.css` — standalone styling for the Sweet Notes page.
+- `notes.js` — random little-note interaction.
