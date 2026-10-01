@@ -10,7 +10,7 @@ const notes=[
 ["Jangan lupa untuk selalu bersyukur, karena hari ini juga adalah hadiah.","find one little thing to smile about"]
 ];
 const backgrounds=[1,2,3,4,5,6,7,8,9].map(n=>`images/sweet-bg-${n}.jpg`);
-const q=document.getElementById('quote'),t=document.getElementById('tiny'),b=document.getElementById('newNote');
+const q=document.getElementById('quote'),b=document.getElementById('newNote');
 const bgA=document.getElementById('bgA'),bgB=document.getElementById('bgB');
 let activeBg=bgA,current=-1;
 function showNote(index){
@@ -21,10 +21,10 @@ function showNote(index){
  nextBg.style.opacity='1';
  activeBg.style.opacity='0';
  activeBg=nextBg;
- q.classList.remove('note-enter'); t.classList.remove('note-enter');
+ q.classList.remove('note-enter');
  void q.offsetWidth;
- q.textContent='“'+quote+'”'; t.textContent=tiny;
- q.classList.add('note-enter'); t.classList.add('note-enter');
+ q.textContent='“'+quote+'”';
+ q.classList.add('note-enter');
 }
 function nextNote(){let next;do{next=Math.floor(Math.random()*notes.length)}while(next===current&&notes.length>1);showNote(next)}
 b.addEventListener('click',nextNote);
