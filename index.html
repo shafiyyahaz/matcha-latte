@@ -1,31 +1,184 @@
 <!doctype html>
 <html lang="id">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Matcha Latte — A Little Green Moment</title>
-<meta name="description" content="Aesthetic matcha café website with real food photography.">
-<link rel="icon" href="images/favicon.svg"><link rel="stylesheet" href="style.css">
+<meta name="description" content="Premium aesthetic matcha café — soft, modern, and crafted for slow green moments.">
+<link rel="icon" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><a class="logo" href="#home">抹茶 <span>MATCHA LATTE</span></a><nav><a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#space">The Space</a><a href="#journal">Journal</a></nav><button id="bagBtn">Bag <b id="count">0</b></button></header>
+<header>
+  <a class="logo" href="#home">抹茶 <span>MATCHA LATTE</span></a>
+  <nav id="nav">
+    <a href="#menu">Menu</a>
+    <a href="#story">Our Story</a>
+    <a href="#space">The Space</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#journal">Journal</a>
+  </nav>
+  <div class="header-actions">
+    <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    <button id="bagBtn">Bag <b id="count">0</b></button>
+    <button id="menuToggle" aria-label="Menu">☰</button>
+  </div>
+</header>
 
 <section class="hero" id="home">
-  <div class="hero-copy"><small>SLOW • FRESH • GREEN</small><h1>A little <i>green</i><br>moment.</h1><p>Whisked gently, poured with care — a little green comfort for slow mornings, soft afternoons, and happy little pauses.</p><a class="dark" href="#menu">Explore the menu</a> <button class="link" id="surprise">Surprise me ↗</button></div>
-  <div class="hero-img"><div class="hero-glow"></div><img src="images/hero-matcha.jpg" alt="Layered iced matcha latte with matcha powder and bamboo whisk"><span>good<br>matcha<br>good mood</span></div>
+  <div class="hero-copy">
+    <small>SLOW • FRESH • GREEN</small>
+    <h1>A little <i>green</i><br>moment.</h1>
+    <p>Whisked gently, poured with care — a little green comfort for slow mornings, soft afternoons, and happy little pauses.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#menu">Explore the menu</a>
+      <button class="btn ghost" id="surprise">Surprise me</button>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://images.pexels.com/photos/35672623/pexels-photo-35672623.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Layered iced matcha latte with matcha powder and bamboo whisk">
+    <span class="hero-badge">good<br>matcha<br>good mood</span>
+  </div>
 </section>
-<div class="ticker">WHISKED WITH CARE　✦　MADE FOR SLOW MORNINGS　✦　A LITTLE GREEN MOMENT</div>
 
-<section class="story" id="story"><div class="story-title"><small>A LITTLE GREEN PAUSE</small><h2>Soft moments,<br>served in green.</h2><span class="story-note">whisk • pour • pause</span></div><p>Earthy matcha, silky milk and a whisper of sweetness — made for quiet mornings, slow afternoons, and the little moments you want to keep a little longer.</p><div class="story-deco" aria-hidden="true"><span>抹茶</span></div></section>
+<div class="ticker">WHISKED WITH CARE　✦　MADE FOR SLOW MORNINGS　✦　A LITTLE GREEN MOMENT　✦　PREMIUM MATCHA</div>
 
-<section class="menu" id="menu"><div class="head"><div><small>OUR MATCHA</small><h2>Find your green.</h2></div><div class="filters"><button class="active" data-f="all">All</button><button data-f="fresh">Fresh</button><button data-f="creamy">Creamy</button></div></div><div class="grid" id="grid"></div></section>
+<section class="story" id="story">
+  <div class="story-title">
+    <small>A LITTLE GREEN PAUSE</small>
+    <h2>Soft moments,<br>served in green.</h2>
+    <span class="story-note">whisk • pour • pause</span>
+  </div>
+  <p>Earthy matcha, silky milk and a whisper of sweetness — made for quiet mornings, slow afternoons, and the little moments you want to keep a little longer.</p>
+  <div class="story-deco" aria-hidden="true"><span>抹茶</span></div>
+</section>
 
-<section class="feature"><img src="https://images.pexels.com/photos/34491288/pexels-photo-34491288.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Matcha latte styled on a sunny cafe table with pastry"><div><small>SEASONAL FAVOURITE</small><h2>Strawberry meets matcha.</h2><p>Bright berries, earthy green tea and a creamy finish. Sweet, soft and a little dreamy.</p><button class="dark add" data-id="strawberry">Add to bag</button></div></section>
+<section class="menu" id="menu">
+  <div class="head">
+    <div>
+      <small>OUR MATCHA</small>
+      <h2>Find your green.</h2>
+    </div>
+    <div class="menu-controls">
+      <input type="text" id="search" placeholder="Search matcha..." aria-label="Search menu">
+      <div class="filters">
+        <button class="active" data-f="all">All</button>
+        <button data-f="fresh">Fresh</button>
+        <button data-f="creamy">Creamy</button>
+      </div>
+    </div>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
 
-<section class="space" id="space"><div class="space-copy"><small>THE MATCHA SPACE</small><h2>A little café<br>for slow moments.</h2><p>Natural light, warm wood, leafy corners and a quiet Japanese-inspired mood. The kind of place where your matcha gets to be the main character.</p></div><div class="space-photo"><img src="https://images.pexels.com/photos/4940773/pexels-photo-4940773.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Aesthetic cafe interior with plants and wooden table"><span>soft light • warm wood • green corners</span></div></section>
+<section class="feature">
+  <div class="feature-img">
+    <img src="https://images.pexels.com/photos/34491288/pexels-photo-34491288.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Strawberry matcha latte">
+  </div>
+  <div class="feature-copy">
+    <small>SEASONAL FAVOURITE</small>
+    <h2>Strawberry meets matcha.</h2>
+    <p>Bright berries, earthy green tea and a creamy finish. Sweet, soft and a little dreamy.</p>
+    <button class="btn primary add" data-id="strawberry">Add to bag</button>
+  </div>
+</section>
 
-<section class="journal" id="journal"><div class="head"><div><small>MATCHA JOURNAL</small><h2>For your soft little moments.</h2></div></div><div class="journal-grid"><img src="https://images.pexels.com/photos/8004563/pexels-photo-8004563.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Coconut matcha latte"><div class="quote">“Take a breath.<br>Take a sip.<br>Take it slow.”<small>— matcha mood</small></div><img src="https://images.pexels.com/photos/37105479/pexels-photo-37105479.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Mango matcha drink"></div></section>
+<section class="space" id="space">
+  <div class="space-copy">
+    <small>THE MATCHA SPACE</small>
+    <h2>A little café<br>for slow moments.</h2>
+    <p>Natural light, warm wood, leafy corners and a quiet Japanese-inspired mood. The kind of place where your matcha gets to be the main character.</p>
+    <div class="space-tags">soft light • warm wood • green corners</div>
+  </div>
+  <div class="space-photo">
+    <img src="https://images.pexels.com/photos/4940773/pexels-photo-4940773.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Aesthetic cafe interior with plants and wooden table">
+  </div>
+</section>
 
-<footer><div class="logo">抹茶 <span>MATCHA LATTE</span></div><p>A little green moment, every day.</p><small>© 2026 Matcha Latte</small></footer>
-<aside id="drawer"><div class="drawer-head"><h3>Your bag</h3><button id="close">×</button></div><div id="items"></div><div class="total"><span>Total</span><b id="total">Rp0</b></div><button class="dark full" id="order">Order via WhatsApp</button></aside><div id="overlay"></div><script src="script.js"></script>
-<a class="sweet-notes-link" href="notes.html" aria-label="Open Sweet Notes">💌 Sweet Notes</a>
-</body></html>
+<section class="testimonials" id="testimonials">
+  <div class="head">
+    <div>
+      <small>LOVE NOTES</small>
+      <h2>What they say.</h2>
+    </div>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <p>“The matcha is so smooth and the vibe is perfect for slow mornings.”</p>
+      <strong>— Aya, regular</strong>
+    </div>
+    <div class="testi-card">
+      <p>“Strawberry Matcha is my new favorite. Creamy, not too sweet, beautiful.”</p>
+      <strong>— Raka</strong>
+    </div>
+    <div class="testi-card">
+      <p>“Finally a matcha place that feels premium and calming.”</p>
+      <strong>— Sinta</strong>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="newsletter-inner">
+    <h2>Join the little green circle</h2>
+    <p>Get seasonal menu drops, slow-morning tips, and soft updates.</p>
+    <form id="newsForm">
+      <input type="email" placeholder="Your email" required>
+      <button type="submit" class="btn primary">Subscribe</button>
+    </form>
+    <small id="newsMsg"></small>
+  </div>
+</section>
+
+<section class="journal" id="journal">
+  <div class="head">
+    <div>
+      <small>MATCHA JOURNAL</small>
+      <h2>For your soft little moments.</h2>
+    </div>
+  </div>
+  <div class="journal-grid">
+    <div class="journal-img"><img src="https://images.pexels.com/photos/8004563/pexels-photo-8004563.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Coconut matcha latte"></div>
+    <div class="quote">“Take a breath.<br>Take a sip.<br>Take it slow.”<small>— matcha mood</small></div>
+    <div class="journal-img"><img src="https://images.pexels.com/photos/37105479/pexels-photo-37105479.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Mango matcha drink"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">抹茶 <span>MATCHA LATTE</span></div>
+  <p>A little green moment, every day.</p>
+  <small>© 2026 Matcha Latte</small>
+</footer>
+
+<aside id="drawer">
+  <div class="drawer-head"><h3>Your bag</h3><button id="close">×</button></div>
+  <div id="items"></div>
+  <div class="total"><span>Total</span><b id="total">Rp0</b></div>
+  <button class="btn primary full" id="order">Order via WhatsApp</button>
+</aside>
+<div id="overlay"></div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">×</button>
+    <div class="modal-img"><img id="modalImg" src="" alt=""></div>
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-options">
+        <label>Size <select id="modalSize"><option>Regular</option><option>Large</option></select></label>
+        <label>Sweetness <select id="modalSweet"><option>Less</option><option selected>Normal</option><option>More</option></select></label>
+        <label>Milk <select id="modalMilk"><option>Oat</option><option>Whole</option><option>Almond</option><option>Soy</option></select></label>
+      </div>
+      <button class="btn primary" id="modalAdd">Add to bag</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<a href="https://wa.me/?text=Halo%20kak,%20aku%20mau%20tanya%20tentang%20Matcha%20Latte" class="float-wa" aria-label="Chat via WhatsApp" target="_blank">💬</a>
+</body>
+</html>
